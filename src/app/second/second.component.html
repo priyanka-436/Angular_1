@@ -1,0 +1,35 @@
+<h3 nClass="bold"> Hey There!! Welcome to the class..</h3>
+
+
+<div [ngSwitch]="Test">
+    <h1 *ngSwitchCase="1">one </h1>
+    <h1 *ngSwitchCase="2">Two </h1>  
+    <h1 *ngSwitchDefault> Final</h1>  
+</div>
+
+<div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+    
+          <th class="hidden">Id</th>
+          <th>FirstName</th>
+          <th>Occupation</th>
+          <th>Temp</th>
+          <th>Salary</th>
+        </tr>
+        </thead>
+    
+        <tbody>
+
+
+        <tr *ngFor="let i of users let count=index">
+        <td>{{count+1}}</td>
+        <td>{{i.firstName | uppercase}}</td> 
+        <td>{{i.Occupation}}</td>  
+        <td>{{i.temp | percent}}</td>  
+        <td>{{i.salary | currency:'CAD'}}</td>   
+            </tr>
+            </tbody>
+            </table>
+</div>
