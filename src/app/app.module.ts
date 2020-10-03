@@ -19,7 +19,8 @@ import {ChildComponent} from './ChildComponent/ChildComponent';
 import {ApiService} from './Services/Api.service';
 import {userComponent} from './User/user.component';
 import { loginComponent } from './Login/login.component'
-import  { AuthenticationGuard } from './Services/authentication.guard'
+import  { AuthenticationGuard } from './Services/authentication.guard';
+import {MaxValueDirective} from './Drirective/CustomDirective'
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import  { AuthenticationGuard } from './Services/authentication.guard'
     DemoLogComponent,
     ChildComponent,
     userComponent,
-    loginComponent
+    loginComponent,
+    MaxValueDirective
   ],
   imports: [
     BrowserModule,

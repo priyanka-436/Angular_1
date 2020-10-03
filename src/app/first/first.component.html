@@ -1,6 +1,9 @@
 <div class="col-md-8 user-container">
   <br/>
   <h4 style="margin: auto">User Details</h4>
+
+<br/>
+<input type="number" name="qty" numMaxValue="5"/>
   <br>
 <button [routerLink]="['/addUser']" class="btn btn-primary">Add User</button>
 <br/>
@@ -28,8 +31,8 @@
       <td>{{user.lastName}}</td>
       <td>{{user.age}}</td>
       <td>{{user.salary}}</td>
-      <td  ><button class="btn btn-success"(click)="editUser(user.id)"> Edit</button></td>
-      <td ><button class="btn btn-success" (click)="deletUser(user.id)"> Delete</button></td>
+      <td><button class="btn btn-success"(click)="editUser(user.id)"> Edit</button></td>
+      <td><button class="btn btn-success" (click)="deletUser(user.id)"> Delete</button></td>
     </tr>
     </tbody>
   </table>
